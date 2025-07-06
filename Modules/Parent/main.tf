@@ -3,7 +3,7 @@ module "rg" {
   rg_name  = "rg890"
   location = "north europe"
 }
-
+# main me change
 module "storage" {
   source                   = "../Child/data_storage"
   depends_on               = [module.rg]
