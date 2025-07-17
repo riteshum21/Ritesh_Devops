@@ -3,6 +3,13 @@ module "rg" {
   rg_name  = "rg890"
   location = "north europe"
 }
+
+module "rg1" {
+  source   = "../Child/resource_group"
+  rg_name  = "rg8901"
+  location = "north europe"
+}
+
 # main me change
 module "storage" {
   source                   = "../Child/data_storage"
